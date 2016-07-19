@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vehicle Hours and Cost of Delay</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Analysis and data for the Puget Sound region">
+    <link rel="canonical" href="/2015/10/14/delay/">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link href="/feed.xml" rel='alternate' type='application/atom+xml'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics
+    <script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-63982060-1', 'auto');
+  		ga('send', 'pageview');
+    -->
+	</script>
+
+</head>
+
+
+    <body id="page-top" class="index preload">
+
+    <!-- Navigation -->
+
+	<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+        	<div class="navbar-brand page-scroll"><a href=/>PUGET SOUND TRENDS</a></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="li-header">
+                        <a class="page-scroll" href="/bigpicture">Big Picture</a>
+                    </li>
+                    <li class="li-header">
+                        <a class="page-scroll" href="/peopleandplace">Growth</a>
+                    </li>
+                    <li class="li-header">
+                        <a class="page-scroll" href="/transportation">Transportation</a>
+                    </li>
+                    <li class="li-header">
+                        <a class="page-scroll" href="/economy">Economy</a>
+                    </li>
+                    <li class="li-header">
+                        <a class="page-scroll" href="/environment">Environment</a>
+                    </li>
+                    <li class="li-header">
+                        <a class="page-scroll" href="/library">Archive</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    </header>
+
+    <body>
+    <div class="container">
+
+<!--
+        
+          <a class="page-link" href="/404.html">404</a>
+        
+          
+        
+          
+        
+          <a class="page-link" href="/updates/archive/">Archive</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <a class="page-link" href="/transportation/">Transportation</a>
+        
+          <a class="page-link" href="/library/">Archive</a>
+        
+          <a class="page-link" href="/peopleandplace/">People and Place</a>
+        
+          <a class="page-link" href="/updates/">Updates</a>
+        
+          <a class="page-link" href="/economy/">Economy</a>
+        
+          <a class="page-link" href="/bigpicture/">Big Picture</a>
+        
+          
+        
+          <a class="page-link" href="/environment/">Environment</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+ -->
+
+
+
+    <!-- SIDE LINKS -->
+    <div id="sidebar"><a href="http://www.psrc.org"><img id="psrc_logo" src="/static/gem-224.png" alt="PSRC Logo" width="224px" /></a>
+
+      <br/><br/><br/>
+
+      <p class="sidebar_title">SEARCH</p>
+      <form method="get" id="search" action="http://duckduckgo.com/">
+            <input type="hidden" name="sites" value="trends.psrc.org"/>
+            <input type="hidden" name="ka" value="h"/>
+            <input type="hidden" name="k7" value="#fafafa"/>
+            <input type="hidden" name="kj" value="#3f3f3f"/>
+            <input type="hidden" name="ky" value="#fafafa"/>
+            <input type="hidden" name="kx" value="b"/>
+            <input type="hidden" name="kt" value="Helvetica"/>
+            <input type="hidden" name="k4" value="-1"/>
+            <input type="text" name="q" maxlength="255" placeholder="Disabled (site not live)"/>
+            <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+</form>
+
+
+      <br/>
+
+      <p class="sidebar_title">TREND TOPICS</p>
+      <div id="tags">
+        
+            &nbsp;<a href="/trend/airport">Airport</a><br/>
+        
+            &nbsp;<a href="/trend/bridges">Bridges</a><br/>
+        
+            &nbsp;<a href="/trend/delay">Delay</a><br/>
+        
+            &nbsp;<a href="/trend/driving">Driving</a><br/>
+        
+            &nbsp;<a href="/economy">Economy</a><br/>
+        
+            &nbsp;<a href="/trend/employment">Employment</a><br/>
+        
+            &nbsp;<a href="/environment">Environment</a><br/>
+        
+            &nbsp;<a href="/trend/ferries">Ferries</a><br/>
+        
+            &nbsp;<a href="/trend/centers">Growth Centers</a><br/>
+        
+            &nbsp;<a href="/trend/affordability">Housing Affordability</a><br/>
+        
+            &nbsp;<a href="/trend/park-and-ride">Park and Ride</a><br/>
+        
+            &nbsp;<a href="/peopleandplace">People and Place</a><br/>
+        
+            &nbsp;<a href="/transportation">Transportation</a><br/>
+        
+            &nbsp;<a href="/trend/transit">Transit</a><br/>
+        
+</div>
+
+
+      <br/><br/>
+
+      <p class="sidebar_title">PSRC LINKS</p>
+      &nbsp;<span style="font-size: 13px;"><a href="http://www.psrc.org">PSRC Website</a></span>
+
+
+    </div>
+
+    <div class="col-md-8 text-left">
+
+
+    <h5 class="author">Updated Oct 14 2015, by Craig Helmann, PSRC</h5>
+
+    <h3 id="vehicle-hours-and-cost-of-delay">Vehicle Hours and Cost of Delay</h3>
+
+<p><img src="/images/2015/delay1.png" alt="VHDelay" title="Vehicle Hours of Delay" /></p>
+
+<p><strong>Figure 1. Annual Vehicle Hours of Delay on the Freeway System</strong></p>
+
+<h4 id="why-does-measuring-vehicle-hours-of-delay-and-estimated-cost-of-delay-matter">Why Does Measuring Vehicle Hours of Delay and Estimated Cost of Delay Matter?</h4>
+
+<p>Vehicle Hours of Delay on the freeway system is a measure that demonstrates how much extra time is spent traveling on the region’s freeways due to congestion. Increased delay has an impact on the movement of both people and goods and stop and go traffic has negative impacts on air quality in the region. Delay is measured against a maximum throughput speed of 50MPH on a freeway segment.</p>
+
+<p>Annual cost of vehicle delay is the economic impact to drivers and businesses based on lost productive time, wasted fuel and additional vehicle maintenance costs due to extra time spent in traffic. The cost of vehicle delay is calculated by applying a monetary value to the estimated hours of delay incurred by passenger and truck travel plus additional vehicle operating costs.</p>
+
+<h4 id="what-is-the-overall-trend-in-the-central-puget-sound-region">What is the Overall Trend in the Central Puget Sound Region?</h4>
+
+<p>Annual vehicle hours of delay on freeways in the PSRC Region since 2010 are highlighted in Figure 1. The corridors included in the bar chart include I-5 from DuPont to Marysville, I-405, SR 167, I-90 from Seattle to Issaquah, SR 520, SR 3 and SR 16.  Vehicle hours of delay have increased over 50% since 2010 with the greatest increases experienced in 2014. Truck delays make up approximately 7.5% of the total delay experienced on the freeway system. There were nearly 9.5M hours of delay experienced in the region in 2014 on the freeway system.</p>
+
+<p>The rapid increase in delay has had impacts on all users of the transportation system including the transit agencies whose buses rely on the arterial and freeway system to move passengers about the region. Rapid increases in delay have increased the number of buses running late and make it more difficult to plan and deliver reliable schedules for service. In 2014 almost 25% of all Community Transit commuter routes operating along I-5 were considered late.</p>
+
+<p>Figure 2 highlights the cost of this congestion in terms of an economic impact to drivers and businesses in terms of lost productivity, wasted fuel and additional vehicle maintenance costs due to extra time spent in traffic. In 2014 this cost was estimated to be over $280M with almost 22% of that cost bore by the freight users in the system. By contrasting vehicle hours of delay with estimated congestion costs on the freeway system, it becomes apparent that there are differences in the way that congestion impacts freight and commercial travel compared to personal travel that may be worth further examination.</p>
+
+<p><strong>Figure 2. Annual Cost of Delay on the Freeway System</strong>
+<img src="/images/2015/delay2.png" alt="DelayCost" title="Cost of Delay on Freeways" /></p>
+
+<p>It is anticipated that annual vehicle hours of delay will be one of the measures remaining to be finalized under MAP 21 rulemaking.  For PSRC, vehicle hours of delay is one of a number of measures that are examined as part of updates to the Congestion Management Process, and Transportation 2040.</p>
+
+
+
+
+    </div>
+
+      </div>
+  </body>
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-left">
+                    <hr/>
+                    <span class="copyright">
+                        &copy; 2016 Puget Sound Regional Council / <a href="http://www.psrc.org">www.psrc.org</a>
+                    </span>
+                    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/static/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/jquery.easing.min.js"></script>
+    <script src="/static/classie.js"></script>
+    <script src="/static/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/static/agency.js"></script>
+
+
+    </body>
+</html>
