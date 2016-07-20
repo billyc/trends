@@ -549,6 +549,10 @@ body {
   padding-bottom: 10px;
 }
 
+.post-image {
+	margin-bottom: 10px;
+}
+
 .post h1 {
   line-height: 1.1;
 }
@@ -724,7 +728,7 @@ body {
 
   }
 
-/* 
+/*
   .mobilenav h5 { display: block; padding-left: 15px;}
 
   body {
